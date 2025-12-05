@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Vaqtda Suhbat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="username-container" id="usernameContainer">
+        <div class="username-box">
+            <h2>Suhbatga xush kelibsiz!</h2>
+            <p>Davom etish uchun ismingizni kiriting</p>
+            <input type="text" id="usernameInput" placeholder="Ismingizni kiriting..." maxlength="20" autofocus>
+            <button id="joinBtn">Kirish</button>
+        </div>
+    </div>
+
+    <div class="chat-container" id="chatContainer" style="display: none;">
+        <div class="chat-header">
+            <div class="header-left">
+                <h1>💬 Real Vaqtda Suhbat</h1>
+                <span class="online-users" id="onlineUsers">0 foydalanuvchi onlayn</span>
+            </div>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle" title="Qorong'i rejim">🌙</button>
+            </div>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+            <div id="messages"></div>
+            <div class="typing-indicator" id="typingIndicator"></div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Xabaringizni yozing..." autocomplete="off">
+            <button id="sendBtn">Yuborish</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
