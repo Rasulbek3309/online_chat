@@ -23,17 +23,3 @@
 - **Joylashtirish:** GitHub Pages yoki Heroku  
 
 ---
-
-## 🚀 O‘rnatish
-```bash
-# Loyiha nusxasini yuklab olish
-git clone https://github.com/Rasulbek3309/online_chat.git
-
-# Papkaga kirish
-cd online_chat
-
-# Zarur paketlarni o‘rnatish
-npm install
-
-# Loyiha ishga tushirish
-npm start
